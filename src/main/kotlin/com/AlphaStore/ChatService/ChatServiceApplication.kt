@@ -1,13 +1,11 @@
-package com.AlphaStore.ChatService
+package com.alphaStore.ChatService
 
-import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient
+import org.springframework.boot.runApplication
 
 @SpringBootApplication
-@EnableDiscoveryClient
 class ChatServiceApplication
 
 fun main(args: Array<String>) {
-    SpringApplication.run(ChatServiceApplication::class.java, *args)
+	runApplication<ChatServiceApplication>(*args)
 }
